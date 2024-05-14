@@ -1,0 +1,18 @@
+﻿@model List<Drinkity.Models.Drinks>
+
+<html>
+<head>
+    <title>Drink Menu</title>
+</head>
+<body>
+    <h1>Drink Menu</h1>
+    <ul>
+        @foreach (var drink in Model)
+        {
+            <img src="~/@drink.Image" width="200" height="200">
+            <p>@drink.GetDrinks()</p>
+        }
+    </ul>
+</body>
+</html>
+
